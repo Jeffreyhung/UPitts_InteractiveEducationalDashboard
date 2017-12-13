@@ -1,0 +1,135 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="Shortcut Icon" type="image/x-icon" href="css/icon3.png" />
+		<title>Help</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">  
+		<script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+		<script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<style>
+			::-webkit-scrollbar { 
+				display: none; 
+			}
+		</style>
+		</head>
+	<body>
+		<nav class="navbar navbar-inverse" style="background:#343a40; color:#fff;">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<a class="navbar-brand" href="dashboard.html" style="color:#fff;">Dashboard</a>
+				</div>
+				<div class="collapse navbar-collapse">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="javascript:history.back()" style="color:#fff;">Return</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<div class="container">
+			<div class="page-header">
+				<h1>Help Document</h1>
+			</div>
+			<div class="panel-group" id="accordion">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">1. Dashboard</a>
+						</h4>
+					</div>
+					<div id="collapseOne" class="panel-collapse collapse">
+						<div class="panel-body">
+							<p style="text-align: center;"><img src="img/Dashboard.png"  alt="Dashboard" width="85%"/><br/>
+							Figure 1 Dashboard page</p>
+							<p>&nbsp;&nbsp;&nbsp;&nbsp;1. Card: Each course is represented by a card with a circle which shows the percentage of the whole progress. If you want to know more details about that course, you can click <b><i>Details</i></b> button.</p>
+							<p>&nbsp;&nbsp;&nbsp;&nbsp;2. Help: If you have no idea what this system is or how you can do with it, you can click the <b><i>Help</i></b> button at the top right corner.</p>
+							<p>&nbsp;&nbsp;&nbsp;&nbsp;3. LogOut: If you want to exist the system, you can click the <b><i>UserName</i></b> button to log out.</p>
+						</div>
+					</div>
+				</div>
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">2. Home</a>
+						</h4>
+					</div>
+					<div id="collapseTwo" class="panel-collapse collapse">
+						<div class="panel-body">
+							<p style="text-align: center;"><img src="img/Overall.png"  alt="Overall" width="85%"/><br/>
+							Figure 2 Overall page</p>
+							<p>&nbsp;&nbsp;&nbsp;&nbsp;1. Grid: Each grid shows the progress of one topic. The first row is Total performance, and the next four rows show the sub performance, including Reading, Examples, Quiz, and Coding. The dark the grid is, the more progress the students make within the corresponding topic.</p>
+							<p>&nbsp;&nbsp;&nbsp;&nbsp;2. Percentage: If you click one grid, it will show the accurate percentage. And click it again, it will hide(Figure 3).</p>
+							<p style="text-align: center;"><img src="img/percentage.png"  alt="percentage" width="300px;"/><br/>
+							Figure 3 Accurate percentage</p>
+						</div>
+					</div>
+				</div>
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">3. Topics</a>
+						</h4>
+					</div>
+					<div id="collapseThree" class="panel-collapse collapse">
+						<div class="panel-body">
+							<p style="text-align: center;"><img src="img/Topic.png"  alt="topic" width="85%"/><br/>
+							Figure 4 Topic Page</p>
+							<p>&nbsp;&nbsp;&nbsp;&nbsp;1. In this page, you can see the details of one topic. Also, you can pick up at most three students to see their performance.</p>
+							<p>&nbsp;&nbsp;&nbsp;&nbsp;2. Select Students: When you first enter this page, the performance of the first three students will be displayed in the page. If you want to see others' performance, you can pick up one, two or three students(Figure 5). However, if you pick up the fourth student, the system will warn you(Figure 6).</p>
+							<p style="text-align: center;"><img src="img/SelectStudent.png"  alt="select students" width="300px"/><br/>
+							Figure 5 Select students</p>
+							<p style="text-align: center;"><img src="img/StudentLimit.png"  alt="student limit" width="600px"/><br/>
+							Figure 6 System warning</p>
+							<p>&nbsp;&nbsp;&nbsp;&nbsp;3. Search Students: If you know the PittIDs of students, you can search them by PittID(Figure 7).</p>
+							<p style="text-align: center;"><img src="img/SearchStudent.png"  alt="search a student" width="300px"/><br/>
+							Figure 7 Search students</p>
+							<p>&nbsp;&nbsp;&nbsp;&nbsp;4. Select Topic: You can click the topics to explore their details. But you can only see one topic at one time(Figure 8).</p>
+							<p style="text-align: center;"><img src="img/SelectTopic.png"  alt="select a topic" width="300px"/><br/>
+							Figure 8 Select a topic</p>
+							<p>&nbsp;&nbsp;&nbsp;&nbsp;5. Topic Details: For each topic, you can know the number of students who don't complete it. If you select students, you can also know how much percentage they have finished the topic no matter the overall information(Figure 9) or the single section(Figure 10).</p>
+							<p style="text-align: center;"><img src="img/OverallInformation.png"  alt="Overall information" width="85%"/><br/>
+							Figure 9 Overall information<br/>
+							<img src="img/SectionInformation.png"  alt="Section information" width="85%"/><br/>
+							Figure 10 Single Section</p>
+							<p>&nbsp;&nbsp;&nbsp;&nbsp;6. Usage Timeline: You can learn how much time students spend on this system each week(Figure 11).</p>
+							<p style="text-align: center;"><img src="img/UsageTimeline.png"  alt="Overall information" width="85%"/><br/>
+							Figure 11 Usage Timeline</p>
+						</div>
+					</div>
+				</div>
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#collapseFour">4. Students</a>
+						</h4>
+					</div>
+					<div id="collapseFour" class="panel-collapse collapse">
+						<div class="panel-body">
+							<p style="text-align: center;"><img src="img/Student.png"  alt="Student" width="85%"/><br/>
+							Figure 12 Student Page</p>
+							<p>&nbsp;&nbsp;&nbsp;&nbsp;1. In this page, you can know the details of one student, including how much time he spends in this system, and how many progresses he makes on each topic(Figure 12).</p>
+							<p>&nbsp;&nbsp;&nbsp;&nbsp;2. Select Student: you can only pick up one students here, since this page is designed to display the information of one student(Figure 13).</p>
+							<p style="text-align: center;"><img src="img/SelectStudent2.png"  alt="Select a student" width="300px"/>
+							<br/>Figure 13 Select a student</p>
+							<p>&nbsp;&nbsp;&nbsp;&nbsp;3. Search Student: the same as the search function in the topic page. You can search students by their PittIds(Figure 14).</p>
+							<p style="text-align: center;"><img src="img/SearchStudent2.png"  alt="Search a student" width="300px"/>
+							<br/>Figure 14 Search a student</p>
+							<p>&nbsp;&nbsp;&nbsp;&nbsp;4. Study Time: You can know how much time the selected student spends on the system each week. The highest point and the lowest point is marked. If you move the mouse to the one week in the graph, you can see accurate time(Figure 15).</p>
+							<p style="text-align: center;"><img src="img/StudyTime.png"  alt="Study Time" width="85%"/>
+							<br/>Figure 15 Study Time</p>
+							<p>&nbsp;&nbsp;&nbsp;&nbsp;5. Topic Grids: For each student, this grid can show how many progresses they make on each topic. If you click one grid, the accurate percentage will pop up(Figure 16). Click again, it will hide.</p>
+							<p style="text-align: center;"><img src="img/StudentPerformance.png"  alt="Topic Grids" width="85%"/>
+							<br/>Figure 16 Topic Grids</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript">
+			$(function () { $('#collapseFour').collapse('hide')});
+			$(function () { $('#collapseTwo').collapse('hide')});
+			$(function () { $('#collapseThree').collapse('hide')});
+			$(function () { $('#collapseOne').collapse('hide')});
+		</script>  
+	</body>
+</html>

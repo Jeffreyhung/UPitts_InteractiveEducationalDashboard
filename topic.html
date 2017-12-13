@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+		<link rel="Shortcut Icon" type="image/x-icon" href="css/icon3.png" />
+		<title>Topic</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+		<style>
+			.col-md-12, .col-md-6 {
+				padding-left: 0;
+				padding-right:0;
+			}
+			.active{
+				background:#64727f;
+			}
+			::-webkit-scrollbar { 
+				display: none; 
+			}
+		</style>
+    </head>
+    <body>
+		<nav class="navbar navbar-inverse" style="background:#343a40; color:#fff;">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<a class="navbar-brand" href="dashboard.html" style="color:#fff;">Dashboard</a>
+				</div>
+				<div class="collapse navbar-collapse">
+					<ul class="nav navbar-nav">
+						<li><a href="overall.html">Home</a></li>
+						<li class="active"><a href="topic.html">Topics</a></li>
+						<li><a href="student.html">Students</a></li> 
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="help.html" style="color:#fff;">Help</a></li>
+						<li class="dropdown">
+							<a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"  style="color:#fff;">Username&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+							<ul class="dropdown-menu">
+								<li><a href="#">Log Out</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<div>
+		</div>
+        <div class="wrapper">
+			<nav id="sidebar" style="margin-top:-20px;">
+                <ul class="list-unstyled components">
+                    <p>Select Student</p>
+                    <li class="active">
+                        <a href="#StudentSubmenu" data-toggle="collapse" aria-expanded="false">Students</a>
+						<ul class="collapse list-unstyled" id="StudentSubmenu">
+							<input type="text" id="searchInput" onkeyup="search()" placeholder="Search for ID" style="color:#000; width:250px;">
+                            <li><a><label><input type="checkbox" class="limit-checkbox" name="AVT6" id="AVT6" checked>AVT6</label></a></li>
+							<li><a><label><input type="checkbox" class="limit-checkbox" name="AMG219" id="AMG219" checked>AMG219</label></a></li>
+							<li><a><label><input type="checkbox" class="limit-checkbox" name="CER35" id="CER35" checked>CER35</label></a></li>
+							<li><a><label><input type="checkbox" class="limit-checkbox" name="CLL70" id="CLL70">CLL70</label></a></li>
+							<li><a><label><input type="checkbox" class="limit-checkbox" name="CMT75" id="CMT75">CMT75</label></a></li>
+							<li><a><label><input type="checkbox" class="limit-checkbox" name="CMV32" id="CMV32">CMV32</label></a></li>
+							<li><a><label><input type="checkbox" class="limit-checkbox" name="DAM171" id="DAM171">DAM171</label></a></li>
+							<li><a><label><input type="checkbox" class="limit-checkbox" name="DDDD" id="DDDD">DDDD</label></a></li>
+							<li><a><label><input type="checkbox" class="limit-checkbox" name="DJP67" id="DJP67">DJP67</label></a></li>
+							<li><a><label><input type="checkbox" class="limit-checkbox" name="DLH64" id="DLH64">DLH64</label></a></li>
+							<li><a><label><input type="checkbox" class="limit-checkbox" name="DMD75" id="DMD75">DMD75</label></a></li>
+							<li><a><label><input type="checkbox" class="limit-checkbox" name="DOM22" id="DOM22">DOM22</label></a></li>
+							<li><a><label><input type="checkbox" class="limit-checkbox" name="HAC79" id="HAC79">HAC79</label></a></li>
+							<li><a><label><input type="checkbox" class="limit-checkbox" name="HUW30" id="HUW30">HUW30</label></a></li>
+							<li><a><label><input type="checkbox" class="limit-checkbox" name="JCH64" id="JCH64">JCH64</label></a></li>
+							<li><a><label><input type="checkbox" class="limit-checkbox" name="JDG38" id="JDG38">JDG38</label></a></li>
+							<li><a><label><input type="checkbox" class="limit-checkbox" name="JDH106" id="JDH106">JDH106</label></a></li>
+							<li><a><label><input type="checkbox" class="limit-checkbox" name="JIL88" id="JIL88">JIL88</label></a></li>
+							<li><a><label><input type="checkbox" class="limit-checkbox" name="JSS57" id="JSS57">JSS57</label></a></li>
+							<li><a><label><input type="checkbox" class="limit-checkbox" name="JZC22" id="JZC22">JZC22</label></a></li>
+						</ul>
+					</li>
+                </ul>
+				<ul class="list-unstyled components">
+                    <p>Select Topic</p>
+                    <li class="active">
+                        <a href="#TopicSubmenu" data-toggle="collapse" aria-expanded="false">Topics</a>
+                        <ul class="collapse list-unstyled" id="TopicSubmenu">
+							<li><a >Total</a></li>
+                            <li><a >ArrayList</a></li>
+							<li><a >Arrays</a></li>
+							<li><a >Boolean Expressions</a></li>
+							<li><a >Classes</a></li>
+							<li><a >Constants</a></li>
+							<li><a >Create 2D Array</a></li>
+							<li><a >Create Object Demo</a></li>
+							<li><a >Create String</a></li>
+							<li><a >Decisions</a></li>
+							<li><a >Do While</a></li>
+							<li><a >If Else</a></li>
+							<li><a >Inheritance</a></li>
+							<li><a >Interfaces</a></li>
+							<li><a >J2D Arrays</a></li>							
+						</ul>
+					</li>
+                </ul>
+            </nav>
+
+            <!-- Page Content Holder -->
+            <div class="container" id="content">
+				<div class="row">
+					<div class="panel panel-default col-md-12">
+						<div class="panel-heading" id="overall_heading">Overall Information - Total</div>
+						<div class="panel-body" >
+							<div class="panel panel-default col-md-6" style="height:300px;">
+								<div class="panel-body" >
+								<canvas id="chart1" ></canvas>
+								</div>
+							</div>
+							<div class="panel panel-default col-md-6" style="height:300px;">
+								<div class="panel-body">
+									<br/>
+									<div class="row student0">
+										<p class="col-md-2" id="student0" name="student0">AVT6: </p>
+										<div class="progress">
+											<div class="progress-bar" id="pb1" role="progressbar" style="width: 0%;" aria-valuemin="0" aria-valuemax="100">0%</div>
+										</div>
+									</div>
+									<br/>
+									<div class="row student1">
+										<p class="col-md-2" id="student1" name="student1">AMG219: </p>
+										<div class="progress">
+											<div class="progress-bar" id="pb2" role="progressbar" style="width: 0%;" aria-valuemin="0" aria-valuemax="100">0%</div>
+										</div>
+									</div>
+									<br/>
+									<div class="row student2">
+										<p class="col-md-2" id="student2" name="student2">CER35: </p>
+										<div class="progress">
+											<div class="progress-bar" id="pb3" role="progressbar" style="width: 0%;" aria-valuemin="0" aria-valuemax="100">0%</div>
+										</div>
+									</div>
+									<br/>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row"  id="usage_timeline">
+					<div class="panel panel-default col-md-12">
+						<div class="panel-heading">Usage Timeline</div>
+						<div class="panel-body" style="height:300px;">
+							<canvas id="timeline"></canvas>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="panel panel-default col-md-6" style="height:225px;">
+						<div class="panel-heading" id="reading_heading">Reading Section - Total</div>
+						<div class="panel-body" >
+							<div class="panel panel-default col-md-6" style="height:155px;">
+								<div class="panel-body" >
+									<canvas id="chart2" ></canvas>
+								</div>
+							</div>
+							<div class="panel panel-default col-md-6" style="height:155px;">
+								<div class="panel-body">
+									<div class="row student0">
+										<p class="col-md-4" id="student0" name="student0">AVT6: </p>
+										<div class="progress">
+											<div class="progress-bar" id="pb4" role="progressbar" style="width: 0%;" aria-valuemin="0" aria-valuemax="100">0%</div>
+										</div>
+									</div>
+									<div class="row student1">
+										<p class="col-md-4" id="student1" name="student1">AMG219: </p>
+										<div class="progress">
+											<div class="progress-bar" id="pb5" role="progressbar" style="width: 0%;" aria-valuemin="0" aria-valuemax="100">0%</div>
+										</div>
+									</div>
+									<div class="row student2">
+										<p class="col-md-4" id="student2" name="student2">CER35: </p>
+										<div class="progress">
+											<div class="progress-bar" id="pb6" role="progressbar" style="width: 0%;" aria-valuemin="0" aria-valuemax="100">0%</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="panel panel-default col-md-6" style="height:225px;">
+						<div class="panel-heading" id="example_heading">Example Section - Total</div>
+						<div class="panel-body" >
+							<div class="panel panel-default col-md-6" style="height:155px;">
+								<div class="panel-body">
+									<canvas id="chart3" ></canvas>
+								</div>
+							</div>
+							<div class="panel panel-default col-md-6" style="height:155px;">
+								<div class="panel-body" >
+									<div class="row student0">
+										<p class="col-md-4" id="student0" name="student0">AVT6: </p>
+										<div class="progress">
+											<div class="progress-bar" id="pb7" role="progressbar" style="width: 0%;" aria-valuemin="0" aria-valuemax="100">0%</div>
+										</div>
+									</div>
+									<div class="row student1">
+										<p class="col-md-4" id="student1" name="student1">AMG219: </p>
+										<div class="progress">
+											<div class="progress-bar" id="pb8" role="progressbar" style="width: 0%;" aria-valuemin="0" aria-valuemax="100">0%</div>
+										</div>
+									</div>
+									<div class="row student2">
+										<p class="col-md-4" id="student2" name="student2">CER35: </p>
+										<div class="progress">
+											<div class="progress-bar" id="pb9" role="progressbar" style="width: 0%;" aria-valuemin="0" aria-valuemax="100">0%</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="panel panel-default col-md-6" style="height:225px;">
+						<div class="panel-heading" id="quiz_heading">Quiz Section - Total</div>
+						<div class="panel-body" >
+							<div class="panel panel-default col-md-6" style="height:155px;">
+								<div class="panel-body" >
+									<canvas id="chart4" ></canvas>
+								</div>
+							</div>
+							<div class="panel panel-default col-md-6" style="height:155px;">
+								<div class="panel-body" >
+									<div class="row student0">
+										<p class="col-md-4" id="student0" name="student0">AVT6: </p>
+										<div class="progress">
+											<div class="progress-bar" id="pb10" role="progressbar" style="width: 0%;" aria-valuemin="0" aria-valuemax="100">0%</div>
+										</div>
+									</div>
+									<div class="row student1">
+										<p class="col-md-4" id="student1" name="student1">AMG219: </p>
+										<div class="progress">
+											<div class="progress-bar" id="pb11" role="progressbar" style="width: 0%;" aria-valuemin="0" aria-valuemax="100">0%</div>
+										</div>
+									</div>
+									<div class="row student2">
+										<p class="col-md-4" id="student2" name="student2">CER35: </p>
+										<div class="progress">
+											<div class="progress-bar" id="pb12" role="progressbar" style="width: 0%;" aria-valuemin="0" aria-valuemax="100">0%</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="panel panel-default col-md-6" style="height:225px;">
+						<div class="panel-heading" id="coding_heading">Coding Section - Total</div>
+						<div class="panel-body" >
+							<div class="panel panel-default col-md-6" style="height:155px;">
+								<div class="panel-body">
+									<canvas id="chart5" ></canvas>
+								</div>
+							</div>
+							<div class="panel panel-default col-md-6" style="height:155px;">
+								<div class="panel-body" >
+									<div class="row student0">
+										<p class="col-md-4" id="student0" name="student0">AVT6: </p>
+										<div class="progress">
+											<div class="progress-bar" id="pb13" role="progressbar" style="width: 0%;" aria-valuemin="0" aria-valuemax="100">0%</div>
+										</div>
+									</div>
+									<div class="row student1">
+										<p class="col-md-4" id="student1" name="student1">AMG219: </p>
+										<div class="progress">
+											<div class="progress-bar" id="pb14" role="progressbar" style="width: 0%;" aria-valuemin="0" aria-valuemax="100">0%</div>
+										</div>
+									</div>
+									<div class="row student2">
+										<p class="col-md-4" id="student2" name="student2">CER35: </p>
+										<div class="progress">
+											<div class="progress-bar" id="pb15" role="progressbar" style="width: 0%;" aria-valuemin="0" aria-valuemax="100">0%</div>
+										</div>
+									</div>	
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.4/Chart.min.js"></script>
+		<script src="js/topic_chart.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function () {
+				$('#sidebarCollapse').on('click', function () {
+					$('#sidebar').toggleClass('active');
+				});
+            });
+			load_chart();
+		</script>
+    </body>
+</html>

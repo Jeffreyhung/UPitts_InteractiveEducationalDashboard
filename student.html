@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+		<link rel="Shortcut Icon" type="image/x-icon" href="css/icon3.png" />
+		<title>Student</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/OverallStyle.css">
+		<style>
+			.active{
+				background:#64727f;
+			}
+			::-webkit-scrollbar { 
+				display: none; 
+			}
+		</style>
+    </head>
+    <body>
+		<nav class="navbar navbar-inverse" style="background:#343a40; color:#fff;">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<a class="navbar-brand" href="dashboard.html" style="color:#fff;">Dashboard</a>
+				</div>
+				<div class="collapse navbar-collapse">
+					<ul class="nav navbar-nav">
+						<li><a href="overall.html">Home</a></li>
+						<li><a href="topic.html">Topics</a></li>
+						<li class="active"><a href="student.html">Students</a></li> 
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="help.html" style="color:#fff;">Help</a></li>
+						<li class="dropdown">
+							<a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"  style="color:#fff;">Username&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+							<ul class="dropdown-menu">
+								<li><a href="#">Log Out</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+        <div class="wrapper">
+			<nav id="sidebar" style="margin-top:-20px;">
+                <ul class="list-unstyled components">
+                    <p>Select Student</p>
+                    <li class="active">
+                        <a href="#StudentSubmenu" data-toggle="collapse" aria-expanded="false">Students</a>
+                        <ul class="collapse list-unstyled" id="StudentSubmenu">
+                            <input type="text" id="searchInput" onkeyup="search()" placeholder="Search for ID" style="color:#000; width:250px;">
+							<li><a><label for="AVT6"><input type="radio" class="radio_button"  name="stuid">AVT6</label></a></li>
+							<li><a><label for="AMG219"><input type="radio"  class="radio_button" name="stuid">AMG219</label></a></li>
+							<li><a><label for="CER35"><input type="radio" class="radio_button"  name="stuid">CER35</label></a></li>
+							<li><a><label for="CLL70"><input type="radio" class="radio_button"  name="stuid">CLL70</label></a></li>
+							<li><a><label for="CMT75"><input type="radio" class="radio_button"  name="stuid">CMT75</label></a></li>
+							<li><a><label for="CMV32"><input type="radio" class="radio_button"  name="stuid">CMV32</label></a></li>
+							<li><a><label for="DAM171"><input type="radio" class="radio_button"  name="stuid">DAM171</label></a></li>
+							<li><a><label for="DDDD"><input type="radio" class="radio_button"  name="stuid">DDDD</label></a></li>
+							<li><a><label for="DJP67"><input type="radio" class="radio_button"  name="stuid">DJP67</label></a></li>
+							<li><a><label for="DLH64"><input type="radio" class="radio_button"  name="stuid">DLH64</label></a></li>
+							<li><a><label for="DMD75"><input type="radio" class="radio_button"  name="stuid">DMD75</label></a></li>
+							<li><a><label for="DOM22"><input type="radio" class="radio_button"  name="stuid">DOM22</label></a></li>
+							<li><a><label for="HAC79"><input type="radio" class="radio_button"  name="stuid">HAC79</label></a></li>
+							<li><a><label for="HUW30"><input type="radio"  class="radio_button" name="stuid">HUW30</label></a></li>
+							<li><a><label for="JCH64"><input type="radio" class="radio_button"  name="stuid">JCH64</label></a></li>
+							<li><a><label for="JDG38"><input type="radio" class="radio_button"  name="stuid">JDG38</label></a></li>
+							<li><a><label for="JDH106"><input type="radio" class="radio_button"  name="stuid">JDH106</label></a></li>
+							<li><a><label for="JIL88"><input type="radio" class="radio_button"  name="stuid">JIL88</label></a></li>
+							<li><a><label for="JSS57"><input type="radio" class="radio_button"  name="stuid">JSS57</label></a></li>
+							<li><a><label for="JZC22"><input type="radio" class="radio_button"  name="stuid">JZC22</label></a></li>
+						</ul>
+					</li>
+                </ul>
+			</nav>
+
+        <div class="container">
+			<div class="row" id="1">
+				<div class="panel panel-default col-md-12" style="padding-left: 0;padding-right:0;" >
+					<div class="panel-heading" id="pannel_heading">Student ID: AVT6</div>
+					<div class="panel-body">
+						<div id="main" style="height:400px; width:100%; "></div>
+					</div>
+				</div>
+			</div>
+			<div><br/><br/><br/><br/>
+				<table class="grid">
+					<thead>
+						<tr class="text-center">
+							<th></th>
+							<th><div class="topic">All_Topics</div></th>
+							<th><div>&nbsp;&nbsp;&nbsp;</div></th>
+							<th><div class="topic"><a>ArrayList</a></div></th>
+							<th><div class="topic"><a>Arrays</a></div></th>
+							<th><div class="topic"><a>Boolean_Expressions</a></div></th>
+							<th><div class="topic"><a>Classes</a></div></th>
+							<th><div class="topic"><a>Constants</a></div></th>
+							<th><div class="topic"><a>Create_2D_Array</a></div></th>
+							<th><div class="topic"><a>Create_Object_Demo</a></div></th>
+							<th><div class="topic"><a>Create_String</a></div></th>
+							<th><div class="topic"><a>Decisions</a></div></th>
+							<th><div class="topic"><a>Do_While</a></div></th>
+							<th><div class="topic"><a>If_Else</a></div></th>
+							<th><div class="topic"><a>Inheritance</a></div></th>
+							<th><div class="topic"><a>Interfaces</a></div></th>
+							<th><div class="topic"><a>J2D_Arrays</a></div></th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="text-center">
+							<td><b>Total</b></td>
+							<td><button type="button" class="btn btn-default transparent" title="Successful rate" data-container="body" data-toggle="popover" data-placement="bottom" data-content="90%" style="opacity=1;"></button></td>
+							<td></td>
+							<td><button type="button" class="btn btn-default" title="Successful rate" data-container="body" data-toggle="popover" data-placement="bottom" data-content="90%" style="opacity=1;"></button></td>
+							<td><button type="button" class="btn btn-default" title="Successful rate" data-container="body" data-toggle="popover" data-placement="bottom" data-content="90%" style="opacity=1;"></button></td>
+							<td><button type="button" class="btn btn-default" title="Successful rate" data-container="body" data-toggle="popover" data-placement="bottom" data-content="90%" style="opacity=1;"></button></td>
+							<td><button type="button" class="btn btn-default" title="Successful rate" data-container="body" data-toggle="popover" data-placement="bottom" data-content="90%" style="opacity=1;"></button></td>
+							<td><button type="button" class="btn btn-default" title="Successful rate" data-container="body" data-toggle="popover" data-placement="bottom" data-content="90%" style="opacity=1;"></button></td>
+							<td><button type="button" class="btn btn-default" title="Successful rate" data-container="body" data-toggle="popover" data-placement="bottom" data-content="90%" style="opacity=1;"></button></td>
+							<td><button type="button" class="btn btn-default" title="Successful rate" data-container="body" data-toggle="popover" data-placement="bottom" data-content="90%" style="opacity=1;"></button></td>
+							<td><button type="button" class="btn btn-default" title="Successful rate" data-container="body" data-toggle="popover" data-placement="bottom" data-content="90%" style="opacity=1;"></button></td>
+							<td><button type="button" class="btn btn-default" title="Successful rate" data-container="body" data-toggle="popover" data-placement="bottom" data-content="90%" style="opacity=1;"></button></td>
+							<td><button type="button" class="btn btn-default" title="Successful rate" data-container="body" data-toggle="popover" data-placement="bottom" data-content="90%" style="opacity=1;"></button></td>
+							<td><button type="button" class="btn btn-default" title="Successful rate" data-container="body" data-toggle="popover" data-placement="bottom" data-content="90%" style="opacity=1;"></button></td>
+							<td><button type="button" class="btn btn-default" title="Successful rate" data-container="body" data-toggle="popover" data-placement="bottom" data-content="90%" style="opacity=1;"></button></td>
+							<td><button type="button" class="btn btn-default" title="Successful rate" data-container="body" data-toggle="popover" data-placement="bottom" data-content="90%" style="opacity=1;"></button></td>
+							<td><button type="button" class="btn btn-default" title="Successful rate" data-container="body" data-toggle="popover" data-placement="bottom" data-content="90%" style="opacity=1;"></button></td>
+						</tr>
+						<tr class="border_bottom"><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+						<tr class="text-center">
+							<td><b>Reading</b></td>
+							<td><button type="button" class="btn btn-default" title="Successful rate" data-container="body" data-toggle="popover" data-placement="bottom" data-content="90%" style="opacity=1;"></button></td>
+							<td></td>
+							<td><button type="button" class="btn btn-default" title="Successful rate" data-container="body" data-toggle="popover" data-placement="bottom" data-content="90%" style="opacity=1;"></button></td>
+							<td><button type="button" class="btn btn-default" title="Successful rate" data-container="body" data-toggle="popover" data-placement="bottom" data-content="90%" style="opacity=1;"></button></td>
+							<td><button type="button" class="btn btn-default" title="Successful rate" data-container="body" data-toggle="popover" data-placement="bottom" data-content="90%" style="opacity=1;"></button></td>
+							<td><button type="button" class="btn btn-default" title="Successful rate" data-container="body" data-toggle="popover" data-placement="bottom" data-content="90%" style="opacity=1;"></button></td>
+							<td><button type="button" class="btn btn-default" title="Successful rate" data-container="body" data-toggle="popover" data-placement="bottom" data-content="90%" style="opacity=1;"></button></td>
+							<td><button type="button" class="btn btn-default" title="Successful rate" data-container="body" data-toggle="popover" data-placement="bottom" data-content="90%" style="opacity=1;"></button></td>
+							<td><button type="button" class="btn btn-default" title="Successful rate" data-container="body" data-toggle="popover" data-placement="bottom" data-content="90%" style="opacity=1;"></button></td>
+							<td><button type="button" class="btn btn-default" title="Successful rate" data-container="body" data-toggle="popover" data-placement="bottom" data-content="90%" style="opacity=1;"></button></td>
+							<td><button type="button" class="btn btn-default" title="Successful rate" data-container="body" data-toggle="popover" data-placement="bottom" data-content="90%" style="opacity=1;"></button></td>
+							<td><button type="button" class="btn btn-default" title="Successful rate" data-container="body" data-toggle="popover" data-placement="bottom" data-content="90%" style="opacity=1;"></button></td>
+							<td><button type="button" class="btn btn-default" title="Successful rate" data-container="body" data-toggle="popover" data-placement="bottom" data-content="90%" style="opacity=1;"></button></td>
+							<td><button type="button" class="btn btn-default" title="Successful rate" data-container="body" data-toggle="popover" data-placement="bottom" data-content="90%" style="opacity=1;"></button></td>
+							<td><button type="button" class="btn btn-default" title="Successful rate" data-container="body" data-toggle="popover" data-placement="bottom" data-content="90%" style="opacity=1;"></button></td>
+							<td><button type="button" class="btn btn-default" title="Successful rate" data-container="body" data-toggle="popover" data-placement="bottom" data-content="90%" style="opacity=1;"></button></td>
+						</tr>
+						<tr class="text-center">
+							<td><b>Examples</b></td>
+							<td><button type="button" class="btn btn-default" title="Successful rate" data-container="body" data-toggle="popover" data-placement="bottom" data-content="90%" style="opacity=1;"></button></td>
+							<td></td>
+							<td><button type="button" class="btn btn-default" title="Successful rate" data-container="body" data-toggle="popover" data-placement="bottom" data-content="90%" style="opacity=1;"></button></td>
+							<td><button type="button" class="btn btn-default" title="Successful rate" data-container="body" data-toggle="popover" data-placement="bottom" data-content="90%" style="opacity=1;"></button></td>
+							<td><button type="button" class="btn btn-default" title="Successful rate" data-container="body" data-toggle="popover" data-placement="bottom" data-content="90%" style="opacity=1;"></button></td>
+							<td><button type="button" class="btn btn-default" title="Successful rate" data-container="body" data-toggle="popover" data-placement="bottom" data-content="90%" style="opacity=1;"></button></td>
+							<td><button type="button" class="btn btn-default" title="Successful rate" data-container="body" data-toggle="popover" data-placement="bottom" data-content="90%" style="opacity=1;"></button></td>
+							<td><button type="button" class="btn btn-default" title="Successful rate" data-container="body" data-toggle="popover" data-placement="bottom" data-content="90%" style="opacity=1;"></button></td>
+							<td><button type="button" class="btn btn-default" title="Successful rate" data-container="body" data-toggle="popover" data-placement="bottom" data-content="90%" style="opacity=1;"></button></td>
+							<td><button type="button" class="btn btn-default" title="Successful rate" data-container="body" data-toggle="popover" data-placement="bottom" data-content="90%" style="opacity=1;"></button></td>
+							<td><button type="button" class="btn btn-default" title="Successful rate" data-container="body" data-toggle="popover" data-placement="bottom" data-content="90%" style="opacity=1;"></button></td>
+							<td><button type="button" class="btn btn-default" title="Successful rate" data-container="body" data-toggle="popover" data-placement="bottom" data-content="90%" style="opacity=1;"></button></td>
+							<td><button type="button" class="btn btn-default" title="Successful rate" data-container="body" data-toggle="popover" data-placement="bottom" data-content="90%" style="opacity=1;"></button></td>
+							<td><button type="button" class="btn btn-default" title="Successful rate" data-container="body" data-toggle="popover" data-placement="bottom" data-content="90%" style="opacity=1;"></button></td>
+							<td><button type="button" class="btn btn-default" title="Successful rate" data-container="body" data-toggle="popover" data-placement="bottom" data-content="90%" style="opacity=1;"></button></td>
+							<td><button type="button" class="btn btn-default" title="Successful rate" data-container="body" data-toggle="popover" data-placement="bottom" data-content="90%" style="opacity=1;"></button></td>
+						</tr>
+						<tr class="text-center">
+							<td><b>Quiz</b></td>
+							<td><button type="button" class="btn btn-default" title="Successful rate" data-container="body" data-toggle="popover" data-placement="bottom" data-content="90%" style="opacity=1;"></button></td>
+							<td></td>
+							<td><button type="button" class="btn btn-default" title="Successful rate" data-container="body" data-toggle="popover" data-placement="bottom" data-content="90%" style="opacity=1;"></button></td>
+							<td><button type="button" class="btn btn-default" title="Successful rate" data-container="body" data-toggle="popover" data-placement="bottom" data-content="90%" style="opacity=1;"></button></td>
+							<td><button type="button" class="btn btn-default" title="Successful rate" data-container="body" data-toggle="popover" data-placement="bottom" data-content="90%" style="opacity=1;"></button></td>
+							<td><button type="button" class="btn btn-default" title="Successful rate" data-container="body" data-toggle="popover" data-placement="bottom" data-content="90%" style="opacity=1;"></button></td>
+							<td><button type="button" class="btn btn-default" title="Successful rate" data-container="body" data-toggle="popover" data-placement="bottom" data-content="90%" style="opacity=1;"></button></td>
+							<td><button type="button" class="btn btn-default" title="Successful rate" data-container="body" data-toggle="popover" data-placement="bottom" data-content="90%" style="opacity=1;"></button></td>
+							<td><button type="button" class="btn btn-default" title="Successful rate" data-container="body" data-toggle="popover" data-placement="bottom" data-content="90%" style="opacity=1;"></button></td>
+							<td><button type="button" class="btn btn-default" title="Successful rate" data-container="body" data-toggle="popover" data-placement="bottom" data-content="90%" style="opacity=1;"></button></td>
+							<td><button type="button" class="btn btn-default" title="Successful rate" data-container="body" data-toggle="popover" data-placement="bottom" data-content="90%" style="opacity=1;"></button></td>
+							<td><button type="button" class="btn btn-default" title="Successful rate" data-container="body" data-toggle="popover" data-placement="bottom" data-content="90%" style="opacity=1;"></button></td>
+							<td><button type="button" class="btn btn-default" title="Successful rate" data-container="body" data-toggle="popover" data-placement="bottom" data-content="90%" style="opacity=1;"></button></td>
+							<td><button type="button" class="btn btn-default" title="Successful rate" data-container="body" data-toggle="popover" data-placement="bottom" data-content="90%" style="opacity=1;"></button></td>
+							<td><button type="button" class="btn btn-default" title="Successful rate" data-container="body" data-toggle="popover" data-placement="bottom" data-content="90%" style="opacity=1;"></button></td>
+							<td><button type="button" class="btn btn-default" title="Successful rate" data-container="body" data-toggle="popover" data-placement="bottom" data-content="90%" style="opacity=1;"></button></td>
+						</tr>
+						<tr class="text-center">
+							<td><b>Coding</b></td>
+							<td><button type="button" class="btn btn-default" title="Successful rate" data-container="body" data-toggle="popover" data-placement="bottom" data-content="90%" style="opacity=1;"></button></td>
+							<td></td>
+							<td><button type="button" class="btn btn-default" title="Successful rate" data-container="body" data-toggle="popover" data-placement="bottom" data-content="90%" style="opacity=1;"></button></td>
+							<td><button type="button" class="btn btn-default" title="Successful rate" data-container="body" data-toggle="popover" data-placement="bottom" data-content="90%" style="opacity=1;"></button></td>
+							<td><button type="button" class="btn btn-default" title="Successful rate" data-container="body" data-toggle="popover" data-placement="bottom" data-content="90%" style="opacity=1;"></button></td>
+							<td><button type="button" class="btn btn-default" title="Successful rate" data-container="body" data-toggle="popover" data-placement="bottom" data-content="90%" style="opacity=1;"></button></td>
+							<td><button type="button" class="btn btn-default" title="Successful rate" data-container="body" data-toggle="popover" data-placement="bottom" data-content="90%" style="opacity=1;"></button></td>
+							<td><button type="button" class="btn btn-default" title="Successful rate" data-container="body" data-toggle="popover" data-placement="bottom" data-content="90%" style="opacity=1;"></button></td>
+							<td><button type="button" class="btn btn-default" title="Successful rate" data-container="body" data-toggle="popover" data-placement="bottom" data-content="90%" style="opacity=1;"></button></td>
+							<td><button type="button" class="btn btn-default" title="Successful rate" data-container="body" data-toggle="popover" data-placement="bottom" data-content="90%" style="opacity=1;"></button></td>
+							<td><button type="button" class="btn btn-default" title="Successful rate" data-container="body" data-toggle="popover" data-placement="bottom" data-content="90%" style="opacity=1;"></button></td>
+							<td><button type="button" class="btn btn-default" title="Successful rate" data-container="body" data-toggle="popover" data-placement="bottom" data-content="90%" style="opacity=1;"></button></td>
+							<td><button type="button" class="btn btn-default" title="Successful rate" data-container="body" data-toggle="popover" data-placement="bottom" data-content="90%" style="opacity=1;"></button></td>
+							<td><button type="button" class="btn btn-default" title="Successful rate" data-container="body" data-toggle="popover" data-placement="bottom" data-content="90%" style="opacity=1;"></button></td>
+							<td><button type="button" class="btn btn-default" title="Successful rate" data-container="body" data-toggle="popover" data-placement="bottom" data-content="90%" style="opacity=1;"></button></td>
+							<td><button type="button" class="btn btn-default" title="Successful rate" data-container="body" data-toggle="popover" data-placement="bottom" value="90%" style="opacity=1;"></button></td>
+						</tr>
+					</tbody>
+				</table><br/><br/><br/><br/>
+			</div>
+		</div>  
+
+        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script src="http://echarts.baidu.com/build/dist/echarts.js"></script>
+        <script src="js/student.js"></script>
+    </body>
+</html>
