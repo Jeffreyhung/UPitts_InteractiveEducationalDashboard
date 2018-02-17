@@ -1,4 +1,4 @@
-# Interactive educational dashboard
+# Interactive Educational Dashboard (Beta)
 
 INFSCI 2410\_Final Project
 
