@@ -3,15 +3,10 @@
 INFSCI 2410\_Final Project
 
 **Group 4:**
-
 **Anping Qi ANQ8**
-
 **Chang Tian CHT97**
-
 **Yunhao Wu YUW122**
-
 **Xinchen Yu XIY82**
-
 **Chi-Heng Hung CHH162**
 
 
